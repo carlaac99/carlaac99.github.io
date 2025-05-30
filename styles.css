@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 #navbar{
   top:0;
   position:fixed;
@@ -60,17 +63,20 @@ main{
   /* height:auto; */
  
   width:100%;
-  max-width: 1280px;
+  max-width: 1500px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem; 
   margin:0 auto;
   margin-bottom:6rem;
+  padding:5vw;
+
 
 }
 .project-tile{
   border:2px solid black; 
   padding: 0;
+  text-decoration:none;
 }
 #projects-div{
   text-align:center;
@@ -99,8 +105,9 @@ main{
 #contact{
   text-align:center;
   height:40vh;
-  background-color:rgb(60, 60, 95);
+  background: linear-gradient(0.65turn,#04064e, #c37bec);
   color:white;
+  padding-top:4vh;
   
   
 }
@@ -108,22 +115,25 @@ main{
   margin:0;
 
 }
-.project-tile a{
+.project-tile{
     display: block;
     height: 100%;
     width: 100%;
     text-decoration: none;
     
 }   
+.project-tile img{
+    display: block;
+   
+}
 .project-title{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0;
   padding:0;
   color: black; /* override if needed */
-  height:1.2rem;
   width:100%;
   background-color:white;
-  border:2px solid black; 
+  /* border:2px solid black;  */
 }
 img{
   width: 100%;
